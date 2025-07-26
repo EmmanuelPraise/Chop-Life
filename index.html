@@ -9,12 +9,12 @@
   <title>Chop Life</title>
 </head>
 
-<body class="">
-  <header class="">
-    <nav class="">
-      <button class="toggle-button" aria-label="Toggle Navigation Menu">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-          stroke-width="1.5" stroke="currentColor" class="size-6">
+<body class="relative max-w-full p-0 m-0">
+  <header class="bg-[var(--accent-color)] xl:px-24 px-12 xl:py-6 py-6 fixed top-0 w-full shadow-lg">
+    <nav class="flex flex-row justify-between items-center">
+      <button class="toggle-button xl:hidden lg:block" aria-label="Toggle Navigation Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
         </svg>
       </button>
@@ -22,24 +22,23 @@
         <a href="/"><img src="/src/img/choplife-logo-dark.png" alt="choplife-logo-dark" /></a>
       </div>
 
-      <ul class="nav-links list-none flex">
+      <ul
+        class="hidden sm:hidden list-none xl:flex gap-5 p-3 text-lg rounded-full items-center bg-white text-[var(--primary-color)] justify-between">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <div class="profile">
-        <a href="/profile"><img src="/src/img/profile-avatar.png" alt="profile-icon" class="size-6" /></a>
+      <div class="profile flex gap-5 items-center bg-white text-white p-2.5 rounded-full">
+        <a href="/profile"><img src="/src/img/profile-avatar.png" alt="profile-icon" class="size-full" /></a>
 
-        <button class="">
+        <button class="flex items-center gap-2 p-2.5 rounded-full bg-[var(--primary-color)]" aria-label="Cart">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6">
+            stroke="currentColor" class="size-8">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-          </svg>
-
-          <span>cart</span>
+          </svg><span>Cart</span>
         </button>
       </div>
     </nav>
@@ -47,29 +46,35 @@
 
   <main>
     <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="left">
-        <h1 class="">
-          Experience the<span class="">Rich Flavors of Nigeria</span>in Every
-          Bite
+    <section id="home" class="hero pt-42 xl:pl-24 pl-12 pr-0 pb-10 flex flex-col md:flex-row justify-between items-center">
+      <div class="left flex-1/2">
+        <h1 class="text-6xl font-semibold">
+          Experience the
+          <span class="text-[var(--primary-color)] block">Rich Flavors of Nigeria</span>
+          in Every Bite
         </h1>
-        <p class="">
+        <p class="text-2xl">
           Authentic, fresh, and irresistible nigerian dishes delivered to you.
         </p>
 
         <div class="hero-buttons">
           <a href="#" class=""><button>Order Now</button></a>
-          <a href="#menu" class=""><button>View Menu</button></a>
+          <a href="#menu" class=""><button>
+              <span>View Menu</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg></button></a>
         </div>
       </div>
-      <div class="right">
+      <div class="right items-end">
         <img src="/src/img/hero-img.png" alt="hero-image" class="hero-image" />
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-      <div class="left">
+    <section id="about" class="about xl:px-24 px-12 py-10 flex flex-row">
+      <div class="flex flex-1/2">
         <div class="card">
           <img src="/src/img/meal.png" alt="" class="" />
           <p>Fresh & Locally Sourced Ingredients</p>
@@ -84,7 +89,7 @@
         </div>
       </div>
 
-      <div class="right">
+      <div class="right flex-1/2">
         <h2 class="">About Us</h2>
         <h3 class="">Discover the Taste of Nigeria</h3>
         <p class="">
@@ -99,7 +104,7 @@
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="menu">
+    <section id="menu" class="menu xl:px-24 px-12 py-10">
       <h2 class="">Our Menu</h2>
       <h3 class="">Explore Our Signature Dishes</h3>
       <div class="menu-items">
@@ -184,7 +189,7 @@
 
       <a href="#menu">
         <button class="view-all">
-          View Full Menu
+          <span>View Full Menu</span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -194,7 +199,7 @@
     </section>
 
     <!-- Why ChopLife Section -->
-    <section class="why-choplife">
+    <section class="why-choplife xl:px-24 px-12 py-10 flex flex-row">
       <h2 class="">Why Choose ChopLife?</h2>
       <div class="reasons">
         <ul class="">
@@ -232,42 +237,43 @@
         <img src="/src/img/meal (2).png" alt="Why Choose ChopLife" class="why-choplife-image" />
         <div class="cta-buttons">
           <a href="#" class=""><button>Order Now</button></a>
-          <a href="#contact" class=""><button>Contact Us for Catering <svg xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <a href="#contact" class=""><button>
+              <span>Contact Us for Catering</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg></button></a>
         </div>
-
       </div>
-
     </section>
 
     <!-- Reviews Section -->
-    <section id="customer-reviews" class="">
+    <section id="customer-reviews" class="xl:px-24 px-12 py-10">
       <h2 class="">Customer Reviews</h2>
       <div class="reviews">
         <div class="review">
           <div class="">
-            <img src="/src/img/profile(1).png" alt="profile image">
+            <img src="/src/img/profile(1).png" alt="profile image" />
             <div class="">
-              <h3> Tunde A.</h3>
+              <h3>Tunde A.</h3>
               <p>Lagos</p>
             </div>
           </div>
           <p class="">
-            ChopLife’s Jollof Rice is the best I’ve ever had! The flavors are rich and authentic.
+            ChopLife’s Jollof Rice is the best I’ve ever had! The flavors are
+            rich and authentic.
           </p>
-          <div class="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
+          <div class="star flex flex-row">
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
           </div>
         </div>
         <div class="review">
           <div class="">
-            <img src="/src/img/profile(1).png" alt="profile image">
+            <img src="/src/img/profile(2).png" alt="profile image" />
             <div class="">
               <h3>Amaka E.</h3>
               <p>Abuja</p>
@@ -276,47 +282,49 @@
           <p class="">
             I love how fast they deliver! The Egusi Soup reminds me of home.
           </p>
-          <div class="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
+          <div class="star flex flex-row">
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
           </div>
         </div>
         <div class="review">
           <div class="">
-            <img src="/src/img/profile(3).png" alt="profile image">
+            <img src="/src/img/profile(3).png" alt="profile image" />
             <div class="">
               <h3>Lade G.</h3>
               <p>Lagos</p>
             </div>
           </div>
           <p class="">
-            ChopLife’s Jollof Rice is the best I’ve ever had! The flavors are rich and authentic.
+            ChopLife’s Jollof Rice is the best I’ve ever had! The flavors are
+            rich and authentic.
           </p>
-          <div class="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
-            <img src="/src/img/star.png" alt="star">
+          <div class="star flex flex-row">
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
+            <img src="/src/img/star.png" alt="star" />
           </div>
         </div>
-        <a href="#" class=""><button>Read More Reviews <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <a href="#" class=""><button>
+            <span>Read More Reviews</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg></button></a>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="">
-
+    <section id="contact" class="xl:px-24 px-12 py-10">
       <div class="contact-us">
         <div class="head">
           <div class="left">
-            <h2 class=""> Contact Us</h2>
+            <h2 class="">Contact Us</h2>
             <p>For inquiries, partnerships, or bulk orders</p>
           </div>
 
@@ -339,7 +347,6 @@
                     d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                 </svg>
 
-
                 <span>+234 701 234 5678, +234 801 234 5678</span>
               </li>
               <li>
@@ -357,30 +364,33 @@
         <footer>
           <p>Follow Us for the Latest Updates!</p>
           <div class="socials">
-            <img src="/src/img/insta.png" alt="instagram">
-            <img src="/src/img/x.png" alt="x">
-            <img src="/src/img/fb.png" alt="facebook">
+            <img src="/src/img/insta.png" alt="instagram" />
+            <img src="/src/img/x.png" alt="x" />
+            <img src="/src/img/fb.png" alt="facebook" />
           </div>
         </footer>
       </div>
 
       <div class="contact-buttons">
         <a href="#" class=""><button>Order Now</button></a>
-        <a href="#contact" class=""><button>Get in Touch <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <a href="#contact" class=""><button>
+            <span>Get in Touch</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg></button></a>
       </div>
     </section>
-
   </main>
 
-   <footer>
+  <footer class="footer xl:px-24 px-12 py-10 flex flex-row justify-between items-center bg-[var(--primary-color)]">
     <div class="footer-left">
-      <a href="/"><img src="/src/img/choplife-logo-light.png" alt="ChopLife Light Logo" /></a>
-      <p>&copy; 2025 ChopLife. All Rights Reserved.</p>
+      <a class="" href="/"><img src="/src/img/choplife-logo-light.png" alt="ChopLife Light Logo" /></a>
+      <p class="border-t text-white">
+        &copy; 2025 ChopLife. All Rights Reserved.
+      </p>
     </div>
-    <ul class="footer-nav">
+    <ul class="footer-nav flex flex-row gap-10 text-lg text-white">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#menu">Menu</a></li>
