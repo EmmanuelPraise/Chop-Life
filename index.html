@@ -5,14 +5,16 @@
   <meta charset="UTF-8" />
   <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ChopLife - Experience the Rich Flavors of Nigeria in Every Bite. Authentic, fresh, and irresistible Nigerian dishes delivered to you." />
-  <meta name="keywords" content="ChopLife, Nigerian Cuisine, Jollof Rice, Egusi Soup, Pounded Yam, Suya, Nigerian Food Delivery, Authentic Nigerian Recipes, Catering Services" />
+  <meta name="description"
+    content="ChopLife - Experience the Rich Flavors of Nigeria in Every Bite. Authentic, fresh, and irresistible Nigerian dishes delivered to you." />
+  <meta name="keywords"
+    content="ChopLife, Nigerian Cuisine, Jollof Rice, Egusi Soup, Pounded Yam, Suya, Nigerian Food Delivery, Authentic Nigerian Recipes, Catering Services" />
   <link rel="stylesheet" href="/src/style.css" />
   <title>ChopLife - Authentic Nigerian Cuisine</title>
 </head>
 
 <body class="relative max-w-full p-0 m-0 font-inter font-normal bg-white text-[var(--secondary-color)]">
-  <header class="header bg-[var(--accent-color)] xl:px-24 px-12 xl:py-6 py-6 fixed top-0 w-full shadow-lg">
+  <header class="header bg-[var(--accent-color)] xl:px-24 px-12 xl:py-6 py-6 fixed top-0 w-full shadow-lg z-10">
     <nav class="flex flex-row justify-between items-center">
       <button class="nav-toggle xl:hidden lg:block cursor-pointer" aria-label="Toggle Navigation Menu">
         ☰
@@ -32,7 +34,9 @@
       <div class="profile flex gap-5 items-center bg-white text-white p-2.5 rounded-full">
         <a href="/profile"><img src="/src/img/profile-avatar.png" alt="profile-icon" class="size-full" /></a>
 
-        <button class="flex items-center gap-2 p-2.5 rounded-full border bg-[var(--primary-color)] hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] cursor-pointer w-full" aria-label="Cart">
+        <button
+          class="flex items-center gap-2 p-2.5 rounded-full border bg-[var(--primary-color)] hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] cursor-pointer w-full"
+          aria-label="Cart">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-8">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -45,20 +49,28 @@
 
   <main>
     <!-- Hero Section -->
-    <section id="home" class="hero pt-42 xl:pl-24 pl-12 pr-0 pb-10 flex flex-col md:flex-row justify-between items-center">
+    <section id="home"
+      class="hero pt-42 xl:pl-24 pl-12 pr-0 pb-10 flex flex-col md:flex-row justify-between items-center">
       <div class="left flex-1/2">
-        <h1 class="text-6xl font-semibold mb-10">
+        <div class="mb-5">
+        <h1 class="md:text-5xl text-4xl font-bold">
           Experience the
           <span class="text-[var(--primary-color)] block">Rich Flavors of Nigeria</span>
           in Every Bite
         </h1>
-        <p class="text-2xl mb-10">
-          Authentic, fresh, and irresistible nigerian <span class="block">dishes delivered to you.</span>
-        </p>
+        <h3 class="text-lg md:text-2xl mt-5">
+          Authentic, fresh, and irresistible nigerian
+          <span class="block">dishes delivered to you.</span>
+        </h3>
+      </div>
 
         <div class="hero-buttons flex flex-row items-center gap-5">
-          <a href="#"><button class="bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-5 rounded-full w-full">Order Now</button></a>
-          <a href="#menu"><button class="flex justify-between items-center gap-2.5 p-5 border border-[var(--primary-color)] bg-white text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white rounded-full w-full">
+          <a href="#"><button
+              class="border bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-5 rounded-full w-full">
+              Order Now
+            </button></a>
+          <a href="#menu"><button
+              class="flex justify-between items-center gap-2.5 p-5 border border-[var(--primary-color)] bg-white text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white rounded-full w-full">
               <span>View Menu</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6">
@@ -72,28 +84,41 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about xl:px-24 px-12 py-10 flex flex-row bg-[url(/src/img/about-bg.png)] bg-no-repeat bg-cover w-full h-[100vh] items-center justify-center">
+    <section id="about"
+      class="about xl:px-24 px-12 py-10 flex flex-row bg-[url(/src/img/about-bg.png)] bg-no-repeat bg-cover w-full h-[100vh] items-center justify-center">
       <div class="flex flex-row items-center gap-10 flex-1/2">
         <div class="bg-white rounded-4xl h-fit p-10 flex flex-col justify-center items-center gap-y-2.5">
           <img src="/src/img/meal.png" alt="" class="w-fit" />
-          <p class="text-center text-lg">Fresh & Locally <span class="block">Sourced Ingredients</span></p>
+          <p class="text-center text-lg">
+            Fresh & Locally <span class="block">Sourced Ingredients</span>
+          </p>
         </div>
+        
         <div class="flex flex-col gap-10">
-          <div class="bg-[var(--primary-color)] text-white rounded-4xl h-fit p-10 flex flex-col justify-center items-center gap-y-2.5">
-          <img src="/src/img/recipie.png" alt="" class="w-fit" />
-          <p class="text-center text-lg">Authentic <span class="block">Nigerian Recipes</span></p>
-        </div>
-        <div class="bg-white rounded-4xl w-fit h-fit p-10 flex flex-col justify-center items-center gap-y-2.5">
-          <img src="/src/img/delivery.png" alt="" class="w-fit" />
-          <p class="text-center text-lg">Fast, Convenient <span class="block">Delivery</span></p>
-        </div>
+          <div
+            class="bg-[var(--primary-color)] text-white rounded-4xl h-fit p-10 flex flex-col justify-center items-center gap-y-2.5">
+            <img src="/src/img/recipie.png" alt="" class="w-fit" />
+            <p class="text-center text-lg">
+              Authentic <span class="block">Nigerian Recipes</span>
+            </p>
+          </div>
+          <div class="bg-white rounded-4xl w-fit h-fit p-10 flex flex-col justify-center items-center gap-y-2.5">
+            <img src="/src/img/delivery.png" alt="" class="w-fit" />
+            <p class="text-center text-lg">
+              Fast, Convenient <span class="block">Delivery</span>
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="right flex-1/2">
-        <h2 class="text-5xl font-semibold">About Us</h2>
-        <img src="/src/img/line.png" alt="line" class="w-3xs">
-        <h3 class="text-4xl mb-5">Discover the Taste of Nigeria</h3>
+        <div class="mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold relative inline-block">
+          About Us
+          <span class="block h-1 bg-[var(--primary-color)] mt-1 rounded-full"></span>
+        </h2>
+        <h3 class="text-lg md:text-2xl mt-2">Discover the Taste of Nigeria</h3>
+      </div>
         <p class="text-lg mb-5">
           At ChopLife, we are passionate about bringing the heart of Nigerian
           cuisine to your plate. Our dishes are inspired by tradition, cooked
@@ -101,111 +126,147 @@
           of love. Whether you crave a comforting plate of Pounded Yam or the
           smoky delight of Suya, ChopLife delivers a true taste of home.
         </p>
-        <a href="#about"><button class="bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-5 rounded-full">Learn More About Us</button></a>
+        <a href="#about"><button
+            class="border bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-5 rounded-full">
+            Learn More About Us
+          </button></a>
       </div>
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="menu xl:px-24 px-12 py-10">
-      <h2 class="text-5xl font-semibold">Our Menu</h2>
-      <img src="/src/img/line.png" alt="line" class="w-3xs">
-      <h3 class="text-4xl mb-10">Explore Our Signature Dishes</h3>
-      <div class="menu-items w-full flex flex-row justify-between items-center gap-10 overflow-x-auto shadow-2xl p-10 rounded-4xl">
-        <button class="previous" aria-label="Previous Menu Slide">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-          </svg>
-        </button>
-
-        <div class="menu-item shadow-lg rounded-4xl p-5 flex flex-col items-center">
-          <img src="/src/img/jollof.png" alt="Jollof Rice & Suya" class="menu-image w-100" />
-          <h4 class="">Jollof Rice & Suya</h4>
-          <p class="">A perfect blend of spice and smoky goodness</p>
-          <div class="price flex flex-row justify-between items-center g-10">
-            <span class="">₦3,200</span>
-            <button class="bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-3 rounded-xl">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div class="menu-item shadow-lg rounded-4xl p-5 flex flex-col items-center">
-          <img src="/src/img/egusi.png" alt="Egusi & Pounded Yam" class="menu-image w-100" />
-          <h4 class="">Egusi & Pounded Yam</h4>
-          <p class="">Traditional Nigerian comfort</p>
-          <div class="price flex flex-row justify-between items-center g-5">
-            <span class="">₦3,500</span>
-            <button class="bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-3 rounded-xl">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div class="menu-item shadow-lg rounded-4xl p-5 flex flex-col items-center">
-          <img src="/src/img/pepper-soup.png" alt="Asun & Pepper Soup" class="menu-image w-100" />
-          <h4 class="">Asun & Pepper Soup</h4>
-          <p class="">Bold flavors for true spice lovers</p>
-          <div class="price flex flex-row justify-between items-center g-5">
-            <span class="">₦2,800</span>
-            <button class="bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-3 rounded-xl">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <div class="menu-item shadow-lg rounded-4xl p-5 flex flex-col items-center">
-          <img src="/src/img/zobo.png" alt="Zobo & Chapman" class="menu-image w-100" />
-          <h4 class="">Zobo & Chapman</h4>
-          <p class="">A perfect blend of spice and smoky goodness</p>
-          <div class="price flex flex-row justify-between items-center g-5">
-            <span class="">₦500</span>
-            <button class="bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-3 rounded-xl">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <button class="next" aria-label="Next Menu Slide">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
-        </button>
+    <section id="menu" class="bg-white xl:px-24 px-6 py-16">
+      <!-- Heading -->
+      <div class="mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold relative inline-block">
+          Our Menu
+          <span class="block h-1 bg-[var(--primary-color)] mt-1 rounded-full"></span>
+        </h2>
+        <h3 class="text-lg md:text-2xl mt-2">Explore Our Signature Dishes</h3>
       </div>
 
-      <a href="#menu">
-        <button class="flex flex-row gap-2.5 bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-5 rounded-full">
-          <span>View Full Menu</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-          </svg>
-        </button>
-      </a>
+      <!-- Carousel Menu Items -->
+      <div class="w-full relative">
+        <div class="p-10 bg-white rounded-3xl shadow-2xl">
+          <div class="flex items-center gap-10">
+            <!-- Left Arrow -->
+            <button class="shrink-0 p-3 rounded-full shadow-lg bg-[var(--accent-color)] text-[var(--primary-color)]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+
+            <!-- Menu Card -->
+            <div class="min-w-[200px] bg-white rounded-2xl shadow-lg relative pt-16 pb-6 px-4 text-center">
+              <div class="absolute top-[-40px] left-1/2 transform -translate-x-1/2">
+                <img src="/src/img/jollof.png" alt="Jollof Rice & Suya" />
+              </div>
+              <h3 class="mt-3 font-bold">Jollof Rice & Suya</h3>
+              <p class="text-sm">
+                A perfect blend of spice and smoky goodness
+              </p>
+              <div class="mt-4 flex items-center justify-between px-2">
+                <span class="text-[var(--primary-color)] font-semibold text-sm">₦3,200</span>
+                <button
+                  class="border bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] rounded-full p-2 transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6h11a1 1 0 100-2H7.5M7 13L5.4 5M16 21a1 1 0 100-2 1 1 0 000 2zm-8 0a1 1 0 100-2 1 1 0 000 2z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="min-w-[200px] bg-white rounded-2xl shadow-lg relative pt-16 pb-6 px-4 text-center">
+              <div class="absolute top-[-40px] left-1/2 transform -translate-x-1/2">
+                <img src="/src/img/egusi.png" alt="Egusi & Pounded Yam" />
+              </div>
+              <h3 class="mt-3 font-bold">Egusi & Pounded Yam</h3>
+              <p class="text-sm">Traditional Nigerian comfort</p>
+              <div class="mt-4 flex items-center justify-between px-2">
+                <span class="text-[var(--primary-color)] font-semibold text-sm">₦3,500</span>
+                <button
+                  class="border bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] rounded-full p-2 transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6h11a1 1 0 100-2H7.5M7 13L5.4 5M16 21a1 1 0 100-2 1 1 0 000 2zm-8 0a1 1 0 100-2 1 1 0 000 2z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="min-w-[200px] bg-white rounded-2xl shadow-lg relative pt-16 pb-6 px-4 text-center">
+              <div class="absolute top-[-40px] left-1/2 transform -translate-x-1/2">
+                <img src="/src/img/pepper-soup.png" alt="Asun & Pepper Soup" />
+              </div>
+              <h3 class="mt-3 font-bold">Asun & Pepper Soup</h3>
+              <p class="text-sm">Bold flavors for true spice lovers</p>
+              <div class="mt-4 flex items-center justify-between px-2">
+                <span class="text-[var(--primary-color)] font-semibold text-sm">₦2,800</span>
+                <button
+                  class="border bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] rounded-full p-2 transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6h11a1 1 0 100-2H7.5M7 13L5.4 5M16 21a1 1 0 100-2 1 1 0 000 2zm-8 0a1 1 0 100-2 1 1 0 000 2z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="min-w-[200px] bg-white rounded-2xl shadow-lg relative pt-16 pb-6 px-4 text-center">
+              <div class="absolute top-[-40px] left-1/2 transform -translate-x-1/2">
+                <img src="/src/img/zobo.png" alt="Zobo & Chapman" />
+              </div>
+              <h3 class="mt-3 font-bold">Zobo & Chapman</h3>
+              <p class="text-sm">
+                A perfect blend of spice and smoky goodness
+              </p>
+              <div class="mt-4 flex items-center justify-between px-2">
+                <span class="text-[var(--primary-color)] font-semibold text-sm">₦500</span>
+                <button
+                  class="border bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] rounded-full p-2 transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6h11a1 1 0 100-2H7.5M7 13L5.4 5M16 21a1 1 0 100-2 1 1 0 000 2zm-8 0a1 1 0 100-2 1 1 0 000 2z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button class="shrink-0 p-3 rounded-full shadow-lg bg-[var(--accent-color)] text-[var(--primary-color)]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- View Full Menu Button -->
+          <div class="mt-10 flex justify-end">
+            <a href="#menu">
+              <button
+                class="flex items-center gap-2 border bg-[var(--primary-color)] text-white px-6 py-3 rounded-full hover:bg-white hover:text-[var(--primary-color)] hover:border hover:border-[var(--primary-color)] transition">
+                <span>View Full Menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Why ChopLife Section -->
     <section class="why-choplife xl:px-24 px-12 py-10 flex flex-row">
-      <div class="reasons">
-        <h2 class="text-5xl font-semibold">Why Choose ChopLife?</h2>
-        <img src="/src/img/line.png" alt="line" class="w-xl">
+      <div class="reasons flex-1/2">
+        <h2 class="mb-10 text-3xl md:text-4xl font-bold relative inline-block">
+          Why Choose ChopLife?
+          <span class="block h-1 bg-[var(--primary-color)] mt-1 rounded-full"></span>
+        </h2>
         <ul class="">
           <li class="">
             <img src="/src/img/flag.png" alt="Nigerian flag" class="" />
@@ -240,8 +301,12 @@
       <div class="image-section">
         <img src="/src/img/meal (2).png" alt="Why Choose ChopLife" class="why-choplife-image" />
         <div class="cta-buttons flex flex-row gap-5">
-          <a href="#"><button class="bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-5 rounded-full">Order Now</button></a>
-          <a href="#contact"><button class="flex justify-between items-center gap-2.5 p-5 border border-[var(--primary-color)] bg-white text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white rounded-full">
+          <a href="#"><button
+              class="border bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-5 rounded-full">
+              Order Now
+            </button></a>
+          <a href="#contact"><button
+              class="flex justify-between items-center gap-2.5 p-5 border border-[var(--primary-color)] bg-white text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white rounded-full">
               <span>Contact Us for Catering</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6">
@@ -253,73 +318,76 @@
 
     <!-- Reviews Section -->
     <section id="customer-reviews" class="py-10">
-      <div class="section-head flex flex-col items-center gap-5">
-        <h2 class="text-5xl font-semibold">Customer Reviews</h2>
-      <img src="/src/img/line.png" alt="line" class="w-lg">
+      <div class="section-head flex flex-col items-center gap-5 mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold relative inline-block">Customer Reviews
+          <span class="block h-1 bg-[var(--primary-color)] mt-1 rounded-full"></span>
+        </h2>
       </div>
+
       <div class="reviews xl:px-24 px-12 bg-[url(/src/img/reviews-bg.png)] bg-no-repeat bg-cover p-10 h-[100vh]">
         <div class="flex flex-row gap-10">
           <div class="review bg-white rounded-4xl p-5 flex flex-col gap-5">
-          <div class="flex flex-row gap-5 items-center"> 
-            <img src="/src/img/profile(1).png" alt="profile image" class="w-fit" />
-            <div class="">
-              <h3 class="text-lg font-semibold">Tunde A.</h3>
-              <p>Lagos</p>
+            <div class="flex flex-row gap-5 items-center">
+              <img src="/src/img/profile(1).png" alt="profile image" class="w-fit" />
+              <div class="">
+                <h3 class="text-lg font-semibold">Tunde A.</h3>
+                <p>Lagos</p>
+              </div>
+            </div>
+            <p class="">
+              ChopLife’s Jollof Rice is the best I’ve ever had! The flavors
+              are rich and authentic.
+            </p>
+            <div class="star flex flex-row">
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
             </div>
           </div>
-          <p class="">
-            ChopLife’s Jollof Rice is the best I’ve ever had! The flavors are
-            rich and authentic.
-          </p>
-          <div class="star flex flex-row">
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-          </div>
-        </div>
-        <div class="review bg-white rounded-4xl p-5 flex flex-col gap-5">
-          <div class="flex flex-row gap-5 items-center">
-            <img src="/src/img/profile(2).png" alt="profile image" class="w-fit" />
-            <div class="">
-              <h3 class="text-lg font-semibold">Amaka E.</h3>
-              <p>Abuja</p>
+          <div class="review bg-white rounded-4xl p-5 flex flex-col gap-5">
+            <div class="flex flex-row gap-5 items-center">
+              <img src="/src/img/profile(2).png" alt="profile image" class="w-fit" />
+              <div class="">
+                <h3 class="text-lg font-semibold">Amaka E.</h3>
+                <p>Abuja</p>
+              </div>
+            </div>
+            <p class="">
+              I love how fast they deliver! The Egusi Soup reminds me of home.
+            </p>
+            <div class="star flex flex-row">
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
             </div>
           </div>
-          <p class="">
-            I love how fast they deliver! The Egusi Soup reminds me of home.
-          </p>
-          <div class="star flex flex-row">
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-          </div>
-        </div>
-        <div class="review bg-white rounded-4xl p-5 flex flex-col gap-5">
-          <div class="flex flex-row gap-5 items-center">
-            <img src="/src/img/profile(3).png" alt="profile image" class="w-fit" />
-            <div class="">
-              <h3 class="text-lg font-semibold">Lade G.</h3>
-              <p>Lagos</p>
+          <div class="review bg-white rounded-4xl p-5 flex flex-col gap-5">
+            <div class="flex flex-row gap-5 items-center">
+              <img src="/src/img/profile(3).png" alt="profile image" class="w-fit" />
+              <div class="">
+                <h3 class="text-lg font-semibold">Lade G.</h3>
+                <p>Lagos</p>
+              </div>
+            </div>
+            <p class="">
+              ChopLife’s Jollof Rice is the best I’ve ever had! The flavors
+              are rich and authentic.
+            </p>
+            <div class="star flex flex-row">
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
+              <img src="/src/img/star.png" alt="star" />
             </div>
           </div>
-          <p class="">
-            ChopLife’s Jollof Rice is the best I’ve ever had! The flavors are
-            rich and authentic.
-          </p>
-          <div class="star flex flex-row">
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-            <img src="/src/img/star.png" alt="star" />
-          </div>
         </div>
-        </div>
-        <a href="#"><button class="flex justify-between items-center gap-2.5 p-5 border border-[var(--primary-color)] bg-white text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white rounded-full">
+        <a href="#"><button
+            class="flex justify-between items-center gap-2.5 p-5 border border-[var(--primary-color)] bg-white text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white rounded-full">
             <span>Read More Reviews</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="size-6">
@@ -332,10 +400,11 @@
     <section id="contact" class="xl:px-24 px-12 py-10">
       <div class="contact-us flex flex-col gap-5 shadow-lg pt-10 rounded-4xl bg-white">
         <div class="flex flex-row justify-between items-center gap-10 px-10">
-          <div class="left">
-            <h2 class="text-5xl font-semibold">Contact Us</h2>
-            <img src="/src/img/line.png" alt="line" class="w-xs">
-            <p>For inquiries, partnerships, or bulk orders</p>
+          <div class="mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold relative inline-block">Contact Us
+              <span class="block h-1 bg-[var(--primary-color)] mt-1 rounded-full"></span>
+            </h2>
+            <h3 class="text-lg md:text-2xl mt-2">For inquiries, partnerships, or <span class="block">bulk orders</span></h3>
           </div>
 
           <address>
@@ -371,8 +440,9 @@
             </ul>
           </address>
         </div>
-        <footer class="flex flex-row justify-between bg-[var(--primary-color)] items-center gap-5 rounded-b-4xl p-10 text-white">
-          <p>Follow Us for the Latest Updates!</p>
+        <footer
+          class="flex flex-row justify-between bg-[var(--primary-color)] items-center gap-5 rounded-b-4xl p-10 text-white">
+          <p class="text-lg md:text-xl mt-2">Follow Us for the Latest <span class="block">Updates!</span></p>
           <div class="socials flex flex-row gap-5">
             <img src="/src/img/insta.png" alt="instagram" />
             <img src="/src/img/x.png" alt="x" />
@@ -382,8 +452,12 @@
       </div>
 
       <div class="contact-buttons flex flex-row gap-5">
-        <a href="#"><button class="bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-5 rounded-full">Order Now</button></a>
-        <a href="#contact"><button class="flex justify-between items-center gap-2.5 p-5 border border-[var(--primary-color)] bg-white text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white rounded-full">
+        <a href="#"><button
+            class="border bg-[var(--primary-color)] text-white hover:border hover:border-[var(--primary-color)] hover:bg-white hover:text-[var(--primary-color)] p-5 rounded-full">
+            Order Now
+          </button></a>
+        <a href="#contact"><button
+            class="flex justify-between items-center gap-2.5 p-5 border border-[var(--primary-color)] bg-white text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white rounded-full">
             <span>Get in Touch</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="size-6">
