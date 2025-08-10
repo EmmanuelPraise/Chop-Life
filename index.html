@@ -58,10 +58,10 @@
 <main>
     <!-- Hero Section -->
     <section id="home"
-      class="hero pt-36 xl:pl-24 pl-12 pr-0 pb-10 flex flex-col md:flex-row justify-between items-center">
-      <div class="left flex-1/2">
-        <div class="mb-5">
-          <h1 class="md:text-5xl text-4xl font-bold">
+      class="pt-36 lg:pl-24 md:pr-0 px-12 pb-10 flex flex-col md:flex-row justify-between items-center">
+      <div class="md:flex-1/2 max-md:flex flex-col justify-center items-center ">
+        <div class="mb-5 max-md:mb-0 max-md:text-center">
+          <h1 class="text-5xl font-bold max-md:text-center">
             Experience the
             <span class="text-green block">Rich Flavors of Nigeria</span>
             in Every Bite
@@ -71,6 +71,8 @@
             <span class="block">dishes delivered to you.</span>
           </h3>
         </div>
+
+        <img src="/src/img/hero-img-mobile.png" alt="hero-img-mobile" class="w-full max-w-xl mx-auto object-contain md:hidden" />
 
         <div class="hero-buttons flex flex-row items-center gap-5">
           <a href="#"><button
@@ -86,14 +88,14 @@
               </svg></button></a>
         </div>
       </div>
-      <div class="right items-end">
+      <div class="right items-end hidden md:flex flex-1/2 justify-center">
         <img src="/src/img/hero-img.png" alt="hero-image" class="w-full max-w-xl mx-auto object-contain" />
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about"
-      class="about xl:px-24 px-12 py-10 flex flex-col-reverse md:flex-row bg-[url(/src/img/about-bg.png)] bg-no-repeat bg-cover w-full items-center justify-center">
+      class="about xl:px-24 px-12 py-10 flex flex-col-reverse md:flex-row bg-[url(/src/img/about-bg.png)] bg-no-repeat bg-cover w-full items-center justify-center max-md:text-center">
       <div class="flex flex-col md:flex-row items-center gap-10 flex-1/2">
         <div class="bg-white rounded-4xl h-fit p-10 flex flex-col justify-center items-center gap-y-2.5">
           <img src="/src/img/meal.png" alt="" class="w-full max-w-fit object-contain" />
@@ -102,7 +104,7 @@
           </p>
         </div>
 
-        <div class="flex flex-col gap-10">
+        <div class="flex flex-col gap-10 mb-18">
           <div
             class="bg-green text-white rounded-4xl h-fit p-10 flex flex-col justify-center items-center gap-y-2.5">
             <img src="/src/img/recipie.png" alt="" class="w-full max-w-fit object-contain" />
@@ -134,7 +136,7 @@
           of love. Whether you crave a comforting plate of Pounded Yam or the
           smoky delight of Suya, ChopLife delivers a true taste of home.
         </p>
-        <a href="#about"><button
+        <a href="#about" class="hidden md:block"><button
             class="border bg-green text-white hover:border hover:border-green hover:bg-white hover:text-green p-5 rounded-full transition-all duration-300 ease-in-out">
             Learn More About Us
           </button></a>
@@ -338,14 +340,14 @@
 
     <!-- Reviews Section -->
     <section id="customer-reviews" class="py-10">
-      <div class="section-head flex flex-col items-center gap-5 mb-10">
+      <div class="section-head flex flex-col items-center gap-5 mb-5">
         <h2 class="text-3xl md:text-4xl font-bold relative inline-block">Customer Reviews
           <span class="block h-1 bg-green mt-1 rounded-full"></span>
         </h2>
       </div>
 
       <div
-        class="reviews-container xl:px-24 px-12 bg-[url(/src/img/reviews-bg.png)] bg-no-repeat bg-cover flex flex-col">
+        class="reviews-container xl:px-24 px-12 py-20 bg-[url(/src/img/reviews-bg.png)] bg-no-repeat bg-cover flex flex-col">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center items-center">
           <!-- Review 1 -->
           <div class="review bg-white rounded-4xl p-5 flex flex-col gap-5 min-h-[300px] relative">
@@ -437,9 +439,7 @@
                 <span>Lagos, Nigeria.</span>
               </li>
               <li class="flex flex-row gap-2 items-center mb-2">
-                <div class="bg-green text-white rounded-full p-2.5"
-                  class="bg-green text-white rounded-full p-2.5"
-                  class="bg-green text-white rounded-full p-2.5">
+                <div class="bg-green text-white rounded-full p-2.5">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -450,9 +450,7 @@
                 <span>+234 701 234 5678, +234 801 234 5678</span>
               </li>
               <li class="flex flex-row gap-2 items-center mb-2">
-                <div class="bg-green text-white rounded-full p-2.5"
-                  class="bg-green text-white rounded-full p-2.5"
-                  class="bg-green text-white rounded-full p-2.5">
+                <div class="bg-green text-white rounded-full p-2.5">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -508,12 +506,12 @@
     </ul>
   </footer>
 
-  <footer class="flex flex-col md:hidden bg-green text-white">
+  <footer class="flex flex-col md:hidden bg-green text-white p-12 gap-8 justify-center items-start">
     <a href="/"><img src="/src/img/choplife-logo-light.png" class="w-full max-w-fit object-contain" alt="choplife-logo-dark" /></a>
-    <h3>Contact Us</h3>
-    <ul class="flex flex-col">
-      <li class="flex flex-row gap-2 items-center mb-2">
-        <div class="bg-green text-white rounded-full p-2.5">
+    <ul class="flex flex-col g-2.5">
+      <h3 class="font-bold text-lg">Contact Us</h3>
+      <li class="flex flex-row gap-2 items-center mb-2.5">
+        <div class="bg-[#76BF67] text-white rounded-full p-2.5">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -524,9 +522,8 @@
 
         <span>Lagos, Nigeria.</span>
       </li>
-      <li class="flex flex-row gap-2 items-center mb-2">
-        <div class="bg-green text-white rounded-full p-2.5" class="bg-green text-white rounded-full p-2.5"
-          class="bg-green text-white rounded-full p-2.5">
+      <li class="flex flex-row gap-2 items-center mb-2.5">
+        <div class="bg-[#76BF67] text-white rounded-full p-2.5">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -536,9 +533,8 @@
 
         <span>+234 701 234 5678, +234 801 234 5678</span>
       </li>
-      <li class="flex flex-row gap-2 items-center mb-2">
-        <div class="bg-green text-white rounded-full p-2.5" class="bg-green text-white rounded-full p-2.5"
-          class="bg-green text-white rounded-full p-2.5">
+      <li class="flex flex-row gap-2 items-center">
+        <div class="bg-[#76BF67] text-white rounded-full p-2.5">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -550,22 +546,22 @@
       </li>
     </ul>
 
-    <h3>Contact</h3>
-    <ul class="flex flex-col md:hidden gap-5 text-lg">
+    <ul class="flex flex-col md:hidden gap-2.5">
+      <h3 class="font-bold text-lg">Company</h3>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#menu">Menu</a></li>
       <li><a href="#">Order Online</a></li>
     </ul>
 
-    <h3>Follow Us</h3>
+    <h3 class="font-bold text-xl">Follow Us</h3>
     <div class="socials flex flex-row gap-5">
       <img src="/src/img/insta.png" alt="instagram" class="w-full max-w-fit object-contain" />
       <img src="/src/img/x.png" alt="x" class="w-full max-w-fit object-contain" />
       <img src="/src/img/fb.png" alt="facebook" class="w-full max-w-fit object-contain" />
     </div>
 
-    <p class="text-white mt-2.5 pt-2.5">
+    <p class="text-lg">
       &copy; 2025 ChopLife. All Rights Reserved.
     </p>
   </footer>
